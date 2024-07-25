@@ -1,0 +1,55 @@
+.card {
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chart {
+  width: 50%;
+  height: 250px;
+}
+
+.status-counts {
+  width: 50%;
+}
+
+.status-counts h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-top: 50px;
+}
+
+.status-counts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.status-counts li {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+  }
+
+  .chart,
+  .status-counts {
+    width: 100%;
+  }
+}

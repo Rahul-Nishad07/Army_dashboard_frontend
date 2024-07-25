@@ -1,0 +1,72 @@
+/* MedicalAppointmentForm.css */
+
+.medical-appointment-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .medical-appointment-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .medical-appointment-form .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .medical-appointment-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .medical-appointment-form .form-group input,
+  .medical-appointment-form .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .medical-appointment-form .form-group input:focus,
+  .medical-appointment-form .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .medical-appointment-form .form-group textarea {
+    resize: vertical;
+  }
+  
+  .medical-appointment-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .medical-appointment-form button[type="submit"]:hover {
+    background-color: #0056b3;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+  
+  

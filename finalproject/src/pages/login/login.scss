@@ -1,0 +1,149 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-section {
+    flex: 1;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .loginimage{
+     width: 300px;
+     height: 200px;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+    // background-color: #f0f4f8;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .role-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+ 
+  }
+  
+  .role-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .role-button:hover {
+    background-color: #e0e7ef;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0066ff;
+    color: white;
+    width: 300px;;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .login-button:hover {
+    background-color: #0051cc;
+  }
+  
+  .social-login {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    // justify-content: space-around;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+   
+  
+  }
+  
+  .social-icon {
+    padding: 10px 15px;
+
+    border: none;
+    background-color: #f0f4f8;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .social-icon:hover {
+    background-color: #e0e7ef;
+  }
+  .button2{
+    // padding: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 39px;
+    background-color: #0066ff;
+    color: white;
+    width: 300px;;
+    cursor: pointer;
+    border-radius: 5px;
+     
+  }
+  

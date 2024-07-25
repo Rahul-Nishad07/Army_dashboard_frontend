@@ -1,0 +1,141 @@
+mission.css
+
+.new {
+    width: 100%;
+    display: flex;
+  }
+  
+  .newContainer {
+    flex: 6;
+    padding: 20px;
+  }
+  
+  .mission-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .mission-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .mission-card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  .card-title{
+     text-align: center;
+     font-weight: bolder;
+     padding-bottom: 10px;
+  }
+
+
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .detail {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .detail:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-text {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+h1{
+   text-align: center;
+   align-items: center;
+   padding-bottom: 20px;
+   padding-top: 10px;
+   font-weight: 900;
+}
+  .button-mission {
+    background-color: #9c8eaa;
+    border-radius: 100px;
+    box-shadow: rgba(170, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  
+    align-items: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-mission:hover {
+    box-shadow: rgba(44, 118, 187, 0.35) 0 -25px 18px -14px inset,rgba(130, 44, 187, 0.25) 0 1px 2px,rgba(44, 89, 187, 0.25) 0 2px 4px,rgba(44, 118, 187, 0.25) 0 4px 8px,rgba(44, 130, 187, 0.25) 0 8px 16px,rgba(44, 177, 187, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  .button-mission1 {
+    background-color: rgba(255, 0, 0, 0.692);
+    border-radius: 100px;
+    box-shadow: rgba(170, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    align-items: end;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-mission1:hover {
+    box-shadow: rgba(44, 118, 187, 0.35) 0 -25px 18px -14px inset,rgba(130, 44, 187, 0.25) 0 1px 2px,rgba(44, 89, 187, 0.25) 0 2px 4px,rgba(44, 118, 187, 0.25) 0 4px 8px,rgba(44, 130, 187, 0.25) 0 8px 16px,rgba(44, 177, 187, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }

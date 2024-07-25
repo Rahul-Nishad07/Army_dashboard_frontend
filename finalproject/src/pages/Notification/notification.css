@@ -1,0 +1,68 @@
+/* NotificationUser.css */
+
+.new {
+    display: flex;
+  }
+  
+  .newContainer {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .notification-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .notification-table th, .notification-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .notification-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .notification-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .notification-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .notification-table .action-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .notification-table .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .notification-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  

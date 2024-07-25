@@ -1,0 +1,92 @@
+
+
+.New {
+    width: 100%;
+    display: flex;
+  }
+  
+  .NewContainer {
+    flex: 6;
+    padding: 20px;
+  }
+  
+  .Mission-cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .Mission-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .Mission-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* .card-content {
+    padding: 20px;
+  } */
+  
+  .Card-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .Details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .Details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .Details:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .Card-text {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* CSS for the delete button */
+.delete-button {
+  background-color: red;   /* Red background color */
+  color: white;            /* White text color */
+  border: none;  
+  width: 100px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 300px;
+  align-items: center;  
+  align-content: center;        /* Remove border */
+  border-radius: 5px;      /* Rounded corners */
+  padding: 5px 10px;       /* Small padding for button */
+  font-size: 12px;         /* Small font size */
+  cursor: pointer;         /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Optional: Change background color on hover */
+.delete-button:hover {
+  background-color: darkred; /* Darker red on hover */
+}

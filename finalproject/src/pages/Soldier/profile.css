@@ -1,0 +1,142 @@
+
+.new {
+  display: flex;
+  flex-direction: row;
+}
+
+.newContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-image {
+  margin-bottom: 10px;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: black;
+
+
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.edit-form-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  margin-bottom: 10px;
+}
+
+.edit-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.edit-form input[type="file"] {
+  border: none;
+}
+
+.user-details {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%; 
+  max-width: 600px; 
+  text-align: center; 
+  position: relative;
+}
+
+.user-details button {
+  margin-top: 20px;
+  background-color: #6c757d;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.user-details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-details p {
+  margin: 5px 0;
+  color: black;
+ margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  align-content: center;
+ 
+
+}
+

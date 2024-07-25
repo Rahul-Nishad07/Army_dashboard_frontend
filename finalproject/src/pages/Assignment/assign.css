@@ -1,0 +1,60 @@
+
+.new {
+  width: 100%;
+  display: flex;
+}
+
+.newContainer {
+  flex: 6;
+  padding: 20px;
+}
+
+.assignment-cards {
+ display: flex;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+}
+
+.assignment-card {
+  width: 100%;
+  display: flex; 
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+
+}
+
+.card-title {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-text strong {
+  color: #333;
+}
+
+
