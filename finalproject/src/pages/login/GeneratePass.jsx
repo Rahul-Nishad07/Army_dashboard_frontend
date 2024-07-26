@@ -111,6 +111,13 @@ const GeneratePass = () => {
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+    //for the restriction - we cant go to another page using back button of the website
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    }; 
+  
+
   const handlePasswordUpdate = async (e) => {
     e.preventDefault();
     try {
@@ -136,7 +143,7 @@ const GeneratePass = () => {
   
       if (data) {
         alert('Password Updated Successfully');
-          navigate('/login'); 
+          navigate('/soldier'); 
         } else {
           alert(data.resData.rData.message); 
         }

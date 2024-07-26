@@ -1,11 +1,109 @@
 
 
 
+// .sidebar {
+//   flex: 1;
+//   border-right: 0.5px solid rgb(230, 227, 227);
+//   min-height: 100vh;
+//   background-color: white;
+// }
+
+// .sidebar .top {
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .sidebar hr {
+//   height: 0;
+//   border: 0.5px solid rgb(230, 227, 227);
+// }
+
+// .sidebar .center {
+//   padding-left: 10px;
+//   padding-top: 20px;
+// }
+
+// .sidebar ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .sidebar .title {
+//   font-size: 10px;
+//   font-weight: bold;
+//   color: #999;
+//   margin-top: 15px;
+//   margin-bottom: 5px;
+// }
+
+// .sidebar li {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   padding: 5px;
+//   cursor: pointer;
+// }
+
+// .sidebar li:hover {
+//   background-color: #ece8ff;
+// }
+
+// .sidebar .icon {
+//   font-size: 18px;
+//   color: #7451f8;
+// }
+
+// .sidebar span {
+//   font-size: 13px;
+//   font-weight: 600;
+//   color: #888;
+//   margin-left: 10px;
+// }
+
+// /* Dropdown styling */
+// .sidebar ul.dropdown {
+//   display: none;
+//   position: absolute;
+//   top: calc(100% + 5px); /* Position below the parent li */
+//   left: 0;
+//   background-color: white;
+//   border-radius: 10px;
+//   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+//   z-index: 1;
+//   min-width: 150px;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   border-left: 1px solid #ddd;
+// }
+
+// .sidebar ul.dropdown li {
+//   padding: 10px;
+//   color: #333;
+//   font-size: 13px;
+//   cursor: pointer;
+// }
+
+// .sidebar ul.dropdown li:hover {
+//   background-color: #f0f0f0;
+// }
+
+// .sidebar li:hover .dropdown {
+//   display: block;
+// }
+
+
+
 .sidebar {
   flex: 1;
   border-right: 0.5px solid rgb(230, 227, 227);
-  min-height: 100vh;
   background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar .top {
@@ -22,7 +120,9 @@
 
 .sidebar .center {
   padding-left: 10px;
-  padding-top: 20px;
+  padding-top: 50px;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -49,6 +149,7 @@
 
 .sidebar li:hover {
   background-color: #ece8ff;
+  border-radius: 1px solid;
 }
 
 .sidebar .icon {
@@ -67,7 +168,7 @@
 .sidebar ul.dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 5px); /* Position below the parent li */
+  top: 100%; /* Position directly below the parent li */
   left: 0;
   background-color: white;
   border-radius: 10px;
@@ -84,7 +185,6 @@
   padding: 10px;
   color: #333;
   font-size: 13px;
-  cursor: pointer;
 }
 
 .sidebar ul.dropdown li:hover {
@@ -94,4 +194,3 @@
 .sidebar li:hover .dropdown {
   display: block;
 }
-

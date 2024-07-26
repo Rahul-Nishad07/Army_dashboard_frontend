@@ -11,6 +11,13 @@ const AssignmentUser = () => {
   
   const [assignmentUser, setAssignmentUser] = useState([]);
 
+
+     //for the restriction - we cant go to another page using back button of the website
+     window.history.pushState(null, null, window.location.href);
+     window.onpopstate = function () {
+         window.history.go(1);
+     }; 
+
   useEffect(() => {
     getData();
   }, []);
@@ -108,9 +115,28 @@ const AssignmentUser = () => {
                     <p className="card-text">{value[3]}</p>
                     <p><strong>Assign Personnel:</strong> {value[4]}</p>
                     <p><strong>Due Date:</strong> {value[5]}</p>
-                    <button className='button-mission2' onClick={() => handleAccept1(value[0])}>Accept</button>
-                    <button className='button-mission2' onClick={() => handleSubmit(value[0])}>Submit</button>
-                    <button className='button-mission3' onClick={() => handleCancel(value[0])}>Cancel</button>
+                   
+                  <button 
+                    className='button-mission'
+                    onClick={() => handleAccept1(value[0])}
+                    disabled={value[6] === "Accepted"}
+                  >
+                    Accept
+                  </button>
+                  {value[6] === "Accepted" && (
+                    <button 
+                      className='button-mission'
+                      onClick={() => handleSubmit(value[0])}
+                    >
+                      Submit
+                    </button>
+                  )}
+                  <button 
+                    className='button-mission1'
+                    onClick={() => handleCancel(value[0])}
+                  >
+                    Cancel
+                  </button>
                   </div>
                 ))}
               </div>

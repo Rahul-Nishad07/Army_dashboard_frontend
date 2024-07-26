@@ -15,21 +15,22 @@ import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 
+
 const Sidebar2 = () => {
   const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar">
       <div className="top">
         <Link to="/home2" style={{ textDecoration: "none" }}>
-        <img
-         src="./images/army_logo.png"
-         alt="ARMY"
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd3OWL0zqs1KeoQAy28_bXLyLmQxr3wgpVEOXNmq161creo-h4PacmJ5vWU6dHiXmIKU4&usqp=CAU"
+        // src="./images/army_logo.png"
+        alt="login"
 
-           style={{ height: '100px', width: '180px' ,paddingTop:'30px' }} 
+        style={{ height: '140px', width: '250px' ,paddingTop:'60px', paddingLeft:'auto' ,paddingRight:'auto' }} 
         />
         </Link>
       </div>
-      <hr />
+      
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
@@ -102,29 +103,8 @@ const Sidebar2 = () => {
           </li>
           </Link>
 
-          
-{/*           
-          <Link to="/home2/piechart" style={{ textDecoration: "none" }}>
-          <li>
-            <NotificationsNoneIcon className="icon" />
-            <span>PieChart</span>
-          </li>
-          </Link> */}
-
-
-
-
           <p className="title">USER</p>
 
-          {/* <Link to="/home2/aboutUser"  style={{ textDecoration: "none" }}>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>About</span>
-          </li>
-          </Link> */}
-
-
-      
             <Link  to='/soldier' onClick={() => {
               localStorage.removeItem('token');
               window.location.href = '/soldier';

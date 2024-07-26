@@ -9,6 +9,12 @@ const URL_API = "http://localhost:5164/getall_army_feedback";
 const Feedback = () => {
   const [feedback, setFeedback] = useState([]);
 
+
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  };
+
   useEffect(() => {
     getData();
   }, []);

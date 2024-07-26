@@ -9,6 +9,17 @@ const DELETE_API ="http://localhost:5164/delete_medicalappointment"
 
 const Medical = () => {
   const [medical, setMedical] = useState([]);
+
+
+  //for the restriction - we cant go to another page using back button of the website
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  }; 
+
+
+
+
   useEffect(() => {
     getData();
   }, []);
@@ -61,6 +72,7 @@ const Medical = () => {
               <th>Purpose</th>
               <th>Name</th>
               <th>DOB</th>
+              <th>Contact</th>
               <th>Email</th>
               <th>Height</th>
               <th>Weight</th>
@@ -72,6 +84,7 @@ const Medical = () => {
           <tbody key={index}>
               {medicals.map((value, idx) => (
               <tr  key={idx}>
+
                 <td>{value[0]}</td>
                 <td>{value[1]}</td>
                 <td>{value[2]}</td>
@@ -80,6 +93,8 @@ const Medical = () => {
                 <td>{value[5]}</td>
                 <td>{value[6]}</td>
                 <td>{value[7]}</td>
+                <td>{value[8]}</td>
+               
                 <td>
                 <button  variant="danger" className='button-mission2' role="button"  onClick={() => handleDelete(value[0])}>Delete</button>
                 </td>

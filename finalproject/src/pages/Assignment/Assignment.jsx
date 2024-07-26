@@ -19,6 +19,11 @@ const navigate = useNavigate();
       duedate: ''
       
     });
+
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    };
   
     const handleImageChange = (e) => {
       const file = e.target.files[0];

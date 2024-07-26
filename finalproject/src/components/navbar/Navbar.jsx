@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const { dispatch } = useContext(DarkModeContext);
 
+
   return (
     <div className="navbar">
       <div className="wrapper">

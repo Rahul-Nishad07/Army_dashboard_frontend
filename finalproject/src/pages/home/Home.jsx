@@ -10,6 +10,13 @@ import SoldiersList from "../login/Soldiers_list";
 import PieChartsAssignment from "../Soldier/PieChartsAssignment";
 
 const Home = () => {
+
+    //for the restriction - we cant go to another page using back button of the website
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    }; 
+  
   return (
     <div className="home">
       <Sidebar />

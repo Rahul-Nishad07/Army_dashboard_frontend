@@ -4,13 +4,21 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import './assign.css'; // Import CSS for styling
 import { Button } from '@mui/material';
+// import './public/images/army_logo.png'
 
 const URL_API = "http://localhost:5164/getall_army_assignment";
 const DELETE_API ="http://localhost:5164/delete_assignmentlist"
 
+
+
 const Assignment_list = () => {
   const [assignments, setAssignments] = useState([]);
+  
 
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  };
   useEffect(() => {
     getData();
   }, []);

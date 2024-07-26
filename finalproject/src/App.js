@@ -59,15 +59,6 @@ function App() {
 
 
 
-{/* 
-            <Route path="users">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
-              <Route
-                path="new"
-                element={<New inputs={userInputs} title="Add New User" />}
-              />
-            </Route>  */}
 
             <Route path="soldier_list">
               <Route index element={<Soldiers_list />} />

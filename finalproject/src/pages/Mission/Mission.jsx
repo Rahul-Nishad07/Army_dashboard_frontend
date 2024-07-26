@@ -8,6 +8,13 @@ import { useNavigate } from 'react-router-dom';
 
 const Mission = ({title }) => {
   const navigate = useNavigate();
+  
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  };
+
+
   const [formData, setFormData] = useState({
     missionname:'',
     image1: '',

@@ -8,6 +8,11 @@ const URL_API = 'http://localhost:5164/getall_army_training';
 const TrainingUser = () => {
 
     const [trainingsuser, setTrainingsuser] = useState([]);
+       //for the restriction - we cant go to another page using back button of the website
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+    window.history.go(1);
+    }; 
 
     useEffect(() => {
       getData();

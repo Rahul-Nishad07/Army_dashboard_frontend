@@ -1,5 +1,8 @@
 .home {
   display: flex;
+  height: fit-content;
+  overflow-y: scroll;
+  height: 100%;
 
   .homeContainer {
     flex: 6;

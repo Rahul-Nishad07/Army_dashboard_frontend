@@ -9,7 +9,12 @@ import { Link, useNavigate } from 'react-router-dom';
 const Soldier = () => {
 
   const navigate = useNavigate();
- 
+    //for the restriction - we cant go to another page using back button of the website
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    }; 
+
     const [formData,setFormData] =useState({
       email:'',
        password:''

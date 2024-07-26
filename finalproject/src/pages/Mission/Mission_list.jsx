@@ -12,6 +12,15 @@ const DELETE_API ="http://localhost:5164/delete_missionlist"
 const MissionList = () => {
   const [missions, setMissions] = useState([]);
 
+
+
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  };
+
+  
+
   useEffect(() => {
     getData();
   }, []);

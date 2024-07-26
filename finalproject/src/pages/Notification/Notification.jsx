@@ -7,7 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Notification = ({ title }) => {
 
-
+  window.history.pushState(null, null, window.location.href);
+  window.onpopstate = function () {
+      window.history.go(1);
+  };
  const navigate = useNavigate();
     const [formData, setFormData] = useState({
         subject:'',

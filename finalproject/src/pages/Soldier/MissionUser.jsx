@@ -12,6 +12,12 @@ const URL_API = "http://localhost:5164/getall_army_mission"; // Base URL for you
 const MissionUser = () => {
   const [missionsuser, setMissionsuser] = useState([]);
 
+     //for the restriction - we cant go to another page using back button of the website
+     window.history.pushState(null, null, window.location.href);
+     window.onpopstate = function () {
+         window.history.go(1);
+     }; 
+
   useEffect(() => {
     getData();
   }, []);
@@ -123,9 +129,32 @@ const MissionUser = () => {
                         <p className="card-text">{value2[5]}</p>
                       </div>
                     </div>
-                    <button className='button-mission' onClick={() => handleAccept(value2[0])}>Accept</button>
+                  
+                    {/* <button className='button-mission' onClick={() => handleAccept(value2[0])}>Accept</button>
                     <button className='button-mission' onClick={() => handleSubmit(value2[0])}>Submit</button>
-                    <button className='button-mission1' onClick={() => handleCancel(value2[0])}>Cancel</button>
+                    <button className='button-mission1' onClick={() => handleCancel(value2[0])}>Cancel</button> */}
+
+                   <button 
+                    className='button-mission'
+                    onClick={() => handleAccept(value2[0])}
+                    disabled={value2[6] === "Accepted"}
+                  >
+                    Accept
+                  </button>
+                  {value2[6] === "Accepted" && (
+                    <button 
+                      className='button-mission'
+                      onClick={() => handleSubmit(value2[0])}
+                    >
+                      Submit
+                    </button>
+                  )}
+                  <button 
+                    className='button-mission1'
+                    onClick={() => handleCancel(value2[0])}
+                  >
+                    Cancel
+                  </button>
                   </div>
                 ))}
               </div>
