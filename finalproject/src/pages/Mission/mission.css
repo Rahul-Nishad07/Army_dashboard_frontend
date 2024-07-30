@@ -69,24 +69,73 @@
   }
   
   /* CSS for the delete button */
-.delete-button {
-  background-color: red;   /* Red background color */
-  color: white;            /* White text color */
-  border: none;  
-  width: 100px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin-left: 300px;
-  align-items: center;  
-  align-content: center;        /* Remove border */
-  border-radius: 5px;      /* Rounded corners */
-  padding: 5px 10px;       /* Small padding for button */
-  font-size: 12px;         /* Small font size */
-  cursor: pointer;         /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+.DELETEBUTTON {
+  background-color: #b61e13; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 90px;
+  margin-right: 100px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.EDITBUTTON{
+
+  background-color: #4569df; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+   
 }
 
-/* Optional: Change background color on hover */
 .delete-button:hover {
-  background-color: darkred; /* Darker red on hover */
+  background-color: darkred; 
 }
+
+
+.updatebutton {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.updatebutton:hover {
+  background-color: #45a049;
+}
+
+.cancelbutton {
+  background-color: #b61e13; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.cancelbutton:hover {
+  background-color: #d32f2f;
+}
+

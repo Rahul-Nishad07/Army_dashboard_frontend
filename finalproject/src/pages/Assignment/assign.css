@@ -1,4 +1,3 @@
-
 .new {
   width: 100%;
   display: flex;
@@ -10,9 +9,9 @@
 }
 
 .assignment-cards {
- display: flex;
- grid-template-columns: repeat(4, 1fr);
- gap: 20px;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .assignment-card {
@@ -29,6 +28,7 @@
   transform: translateY(-5px);
 }
 
+/* Styles for the card image */
 .card-image {
   width: 100%;
   height: 200px;
@@ -37,9 +37,9 @@
   border-top-right-radius: 8px;
 }
 
+/* Styles for card content */
 .card-content {
   padding: 20px;
-
 }
 
 .card-title {
@@ -57,4 +57,67 @@
   color: #333;
 }
 
+/* Styles for the edit form */
+.edit-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.edit-form h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for buttons */
+.updatebutton {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin-left: auto;
+  margin-right: auto;
+ 
+  transition: background-color 0.3s ease;
+}
+
+.updatebutton:hover {
+  background-color: #45a049;
+}
+
+.cancelbutton {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelbutton:hover {
+  background-color: #d32f2f;
+}

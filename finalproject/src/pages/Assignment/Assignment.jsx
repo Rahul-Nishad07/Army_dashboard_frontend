@@ -16,7 +16,8 @@ const navigate = useNavigate();
       image: '',
       description:'',
       personnel: '',
-      duedate: ''
+      duedate: '',
+      status:''
       
     });
 
@@ -41,11 +42,12 @@ const navigate = useNavigate();
       const payload = {
         eventID: "1001",
         addInfo: {
-            taskname: formData.taskname,
+          taskname: formData.taskname,
           image: formData.image,
           description: formData.description,
           personnel: formData.personnel,
-          duedate: formData.duedate
+          duedate: formData.duedate,
+          status: formData.status
         }
       };
       try {
